@@ -130,6 +130,7 @@ echo ".\bjam $boost_win32_bjam_opt stage"
 Invoke-Expression -Command ".\bjam $boost_win32_bjam_opt stage >> $script_log"
 mkdir -force $boost_win32_lib >$null 2>&1
 move -force $boost_win32_stage\lib\*.* $boost_win32_lib
+rmdir -recurse $boost_win32_build_dir >$null 2>&1
 LogEnd
 
 LogBegin "Building boost(x64)"
@@ -137,6 +138,7 @@ echo ".\bjam $boost_x64_bjam_opt stage"
 Invoke-Expression -Command ".\bjam $boost_x64_bjam_opt stage >> $script_log"
 mkdir -force $boost_x64_lib >$null 2>&1
 move -force $boost_x64_stage\lib\*.* $boost_x64_lib
+rmdir -recurse $boost_x64_build_dir >$null 2>&1
 LogEnd
 
 popd # $boost_dir
