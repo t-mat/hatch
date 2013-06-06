@@ -1,0 +1,6 @@
+hatch/
+boost_1_52_0/
+.tmp/
+*.log
+*.zip
+*.7z
