@@ -3,7 +3,7 @@ $hatch_path  = "$root_path\hatch"
 $bin_path    = "$hatch_path\bin"
 $arc_path    = "$hatch_path\arc"
 $log_path    = "$hatch_path\log"
-$script_name = $MyInvocation.InvocationName
+$script_name = "boost-1.52.0.ps1"
 $script_log  = "$log_path\$(Split-Path $script_name -Leaf).log"
 
 

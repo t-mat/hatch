@@ -5,3 +5,5 @@ boost_1_53_0/
 *.log
 *.zip
 *.7z
+*.exe
+*.conf
