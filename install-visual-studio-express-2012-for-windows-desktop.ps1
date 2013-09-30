@@ -40,19 +40,6 @@ Function DownloadFile($url, $fname) {
     }
 }
 
-Function ExtractZip($fname) {
-    $s = new-object -com shell.application
-    $s.namespace("$pwd").Copyhere($s.namespace("$fname").items(),0x14)
-}
-
-Function GetNumberOfCores() {
-    return (Get-WmiObject win32_processor).NumberOfCores
-}
-
-Function GetNumberOfLogicalProcessors() {
-    return (Get-WmiObject win32_processor).NumberOfLogicalProcessors
-}
-
 
 ##
 ##
@@ -63,34 +50,6 @@ mkdir $arc_path   -force >$null 2>&1
 mkdir $log_path   -force >$null 2>&1
 
 LogBegin "** $script_name **"
-
-
-##
-## 7-Zip 9.20
-##
-$_7za_bin = "$bin_path\7za.exe"
-$_7za_url = "http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip"
-$_7za_arc = "$arc_path\$(GetNameFromUrl $_7za_url)"
-$_7za_tmp = "$_7za_arc.tempd"
-
-Function _7za() {
-    if(-not (Test-Path -path $_7za_bin)) {
-        DownloadFile $_7za_url $_7za_arc
-        mkdir -force $_7za_tmp >$null 2>&1
-        pushd $_7za_tmp
-        ExtractZip $_7za_arc
-        copy 7za.exe $_7za_bin
-        popd
-        rmdir -recurse $_7za_tmp >$null 2>&1
-    }
-
-    if(Test-Path -path $_7za_bin) {
-        Invoke-Expression -Command "$_7za_bin $args >> $script_log"
-    } else {
-        echo "Can't invoke $_7za_bin"
-        exit
-    }
-}
 
 
 ##
