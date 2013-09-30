@@ -1,5 +1,12 @@
 ﻿# hatch
 
+hatch is a minimalistic package builder / installer for powershell.
+
+ - hatch is not a package manager.
+ - Script which name is beginning with `install-` is silent installer.
+ - Other scripts are build script.
+   - Just build, and do not install / copy anything.
+
 
 ## install Visual Studio Express 2012 for Windows Desktop silently
 
