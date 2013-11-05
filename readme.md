@@ -8,10 +8,10 @@ hatch is a minimalistic package builder / installer for powershell.
    - Just build, and do not install / copy anything.
 
 
-## install Visual Studio Express 2012 for Windows Desktop silently
+## Install Visual Studio Express 2013 for Windows Desktop silently
 
 ```
-powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.github.com/t-mat/hatch/master/install-visual-studio-express-2012-for-windows-desktop.ps1'))"
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.github.com/t-mat/hatch/master/install-visual-studio-express-2013-for-windows-desktop.ps1'))"
 ```
 
 
