@@ -114,8 +114,8 @@ del $zlib_arc2
 LogEnd
 
 pushd $zlib_dir
-
 LogBegin "Building zlib(win32)"
+Push-EnvironmentBlock
 cmd /c "`"${Env:VS110COMNTOOLS}vsvars32.bat`" && set" | .{ process {
     if ($_ -match '^([^=]+)=(.*)') {
         [System.Environment]::SetEnvironmentVariable($matches[1], $matches[2])
@@ -123,8 +123,8 @@ cmd /c "`"${Env:VS110COMNTOOLS}vsvars32.bat`" && set" | .{ process {
 }}
 Invoke-Expression -Command "nmake.exe -f $zlib_nmakefile $zlib_nmakeopt >> $script_log 2>&1"
 del *.obj, *.res, *.exp, *.exe, *.manifest
+Pop-EnvironmentBlock
 LogEnd
-
 popd # $zlib_dir
 
 LogEnd # "** $script_name **"
