@@ -20,3 +20,11 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object n
 ```
 powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.github.com/t-mat/hatch/master/boost-1.54.0.ps1'))"
 ```
+
+
+## Testing
+
+```
+start hatch-test-server.ps1
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://localhost:8000/YOUR-OWN-NEW-SCRIPT.ps1'))"
+```
