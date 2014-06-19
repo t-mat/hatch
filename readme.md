@@ -25,6 +25,6 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object n
 ## Testing
 
 ```
-start hatch-test-server.ps1
+start powershell .\hatch-test-server.ps1
 powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://localhost:8000/YOUR-OWN-NEW-SCRIPT.ps1'))"
 ```
