@@ -1,4 +1,5 @@
-﻿$root_path   = "$pwd"
+##
+$root_path   = "$pwd"
 $hatch_path  = "$root_path\hatch"
 $bin_path    = "$hatch_path\bin"
 $arc_path    = "$hatch_path\arc"

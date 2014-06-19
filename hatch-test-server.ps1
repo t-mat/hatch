@@ -1,4 +1,4 @@
-﻿# http://msdn.microsoft.com/en-us/library/system.net.httplistener.getcontext(v=vs.110).aspx
+# http://msdn.microsoft.com/en-us/library/system.net.httplistener.getcontext(v=vs.110).aspx
 # http://poshcode.org/4073
 # https://gist.github.com/wagnerandrade/5424431
 
