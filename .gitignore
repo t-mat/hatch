@@ -2,6 +2,8 @@ hatch/
 boost_1_52_0/
 boost_1_53_0/
 boost_1_54_0/
+boost_1_55_0/
+boost_1_56_0/
 zlib-1.2.8/
 .tmp/
 *.log
