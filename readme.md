@@ -15,10 +15,10 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object n
 ```
 
 
-## build boost-1.54.0
+## build boost-1.56.0
 
 ```
-powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.github.com/t-mat/hatch/master/boost-1.54.0.ps1'))"
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.github.com/t-mat/hatch/master/boost-1.56.0.ps1'))"
 ```
 
 
