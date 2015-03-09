@@ -100,7 +100,7 @@ $boost_url = "http://sourceforge.net/projects/boost/files/boost/1.56.0/boost_1_5
 $boost_arc = "$arc_path\$(GetNameFromUrl $boost_url)"
 $boost_nam = [System.IO.Path]::GetFileNameWithoutExtension($boost_arc)
 $boost_dir = "$root_path\$boost_nam"
-$boost_bjam_opt        = "-d 0 -j $(GetNumberOfCores) link=static runtime-link=static"
+$boost_bjam_opt        = "-d 0 -j $(GetNumberOfCores) link=static runtime-link=static toolset=msvc-12.0"
 $boost_win32_lib       = "$boost_dir\lib\win32"
 $boost_x64_lib         = "$boost_dir\lib\x64"
 $boost_win32_build_dir = "$boost_dir\bin.win32"
