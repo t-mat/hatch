@@ -13,5 +13,5 @@ env:
     - GH_USER=t-mat
     - GH_REPO=hatch
     - GH_GIT_EMAIL=takayuki.matsuoka@gmail.com
-    - GH_GIT_NAME=Takayuki MATSUOKA
+    - GH_GIT_NAME="Takayuki MATSUOKA"
     - GH_PAGES_BRANCH=gh-pages
