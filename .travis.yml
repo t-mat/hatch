@@ -7,7 +7,7 @@ rvm:
 - 2.1.2
 env:
   global:
-    secure: v74uP9cBpA4/M9fyxi3wk/XkwxRVAXw425sg8c7Hcr79W0SnDcPsgzaZ07Ewcj48gUZjl5S3kZsaFvY5Qrh3uu+g1BE3b7QlQZINnImfDh/JeJzpD3sq0Kq9SmWJMuteAdbeVvdvqFT4r5iWPWEbZCu3od0vgSG4SjF8lgf7SMk=
+    - secure: v74uP9cBpA4/M9fyxi3wk/XkwxRVAXw425sg8c7Hcr79W0SnDcPsgzaZ07Ewcj48gUZjl5S3kZsaFvY5Qrh3uu+g1BE3b7QlQZINnImfDh/JeJzpD3sq0Kq9SmWJMuteAdbeVvdvqFT4r5iWPWEbZCu3od0vgSG4SjF8lgf7SMk=
     - GH_USER=t-mat
     - GH_REPO=hatch
     - GH_GIT_EMAIL=takayuki.matsuoka@gmail.com
