@@ -16,7 +16,7 @@ jekyll build
 rm -rf ../${GH_REPO}.${GH_PAGES_BRANCH}
 
 #clone `${GH_BRANCH}' branch of the repository using encrypted GH_TOKEN for authentification
-git clone https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git ../${GH_REPO}.${GH_BRANCH}
+git clone -b ${GH_BRANCH} https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git ../${GH_REPO}.${GH_BRANCH}
 
 # copy generated HTML site to `${GH_BRANCH}' branch
 cp -R _site/* ../${GH_REPO}.${GH_BRANCH}
